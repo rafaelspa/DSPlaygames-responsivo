@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --color-green: #38af90;
+  --color-light-gray: #e5e5e5;
+  --color-white: #ffffff;
+  --color-black: #383838;
+
+  --text-dark-green: #797979;
+
+  --bg-red: #dd7e92;
+  --bg-gray: #f0f0f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+    width: 100%;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    height: 90px;
+    background-color: var(--color-green);
+    padding: 10px;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.75));
+}
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.nav-items {
+    display: none;
+}
+
+.nav-main img {
+    width: 62px;
+}
+
+#news .news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+#news h2 {
+    font-weight: 700;
+    color: var(--text-dark-green);
+}
+
+.news-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-items-item {
+    padding: 16px 12px 12px 12px;
+    margin-bottom: 28px;
+    border-radius: 8px;
+    background-color: var(--bg-gray);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.news-items h3 {
+    margin: 0;
+}
+
+.news-items p {
+    margin: 0;
+}
+
+.news-item-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-green);
+}
+
+.news-item-subtitle {
+    font-weight: 700;
+    font-size: 12px;
+    border-bottom: 1px solid var(--color-green);
+    padding-bottom: 3px;
+}
+
+.news-item-date {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    margin-top: 1px;
+}
+
+.news-item-body {
+    color: var(--text-dark-green);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+}
