@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DSPlayGames</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
@@ -15,6 +16,7 @@
           <li><a href="#games"></a>Jogos</li>
           <li><a href="#signup">Inscreva-se</a></li>
         </ul>
+        <img src="img/profile.svg" alt="Profile" />
       </nav>
     </header>
 
@@ -62,7 +64,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto vitae ducimus aperiam.
               </p>
-              <hr/>
+              <hr />
 
               <time datetime="2022-02-23">23/02/2022</time>
               <p>
@@ -93,13 +95,95 @@
       </section>
       <section id="games">
         <div class="container">
-             <div class="games-cards">
-                 <div class="games-card">
-                    <img src="" alt="">
-                 </div>
-             </div>
+          <div class="games-cards">
+            <h2>Jogos</h2>
+            <div class="games-card">
+              <img
+                class="game-image"
+                src="img/horizon.png"
+                alt="Horizon Forbidden West"
+              />
+              <h3 class="game-title">Horizon Forbidden West</h3>
+              <p class="game-publisher">De Sony Interactive Entertainment</p>
+              <div class="game-rate">9.7</div>
+            </div>
+            <div class="games-card">
+              <img
+                class="game-image"
+                src="img/horizon.png"
+                alt="Horizon Forbidden West"
+              />
+              <h3 class="game-title">Horizon Forbidden West</h3>
+              <p class="game-publisher">De Sony Interactive Entertainment</p>
+              <div class="game-rate">9.7</div>
+            </div>
+            <div class="games-card">
+              <img
+                class="game-image"
+                src="img/horizon.png"
+                alt="Horizon Forbidden West"
+              />
+              <h3 class="game-title">Horizon Forbidden West</h3>
+              <p class="game-publisher">De Sony Interactive Entertainment</p>
+              <div class="game-rate">9.7</div>
+            </div>
+          </div>
         </div>
       </section>
+      <section class="signup">
+        <div class="container">
+          <h2 id="signup-title">Faça sua inscrição</h2>
+          <div class="signup-form">
+            <form action="#">
+              <input
+                class="signup-form-name"
+                name="name"
+                type="text"
+                placeholder="Nome completo"
+              />
+              <input
+                class="signup-form-email"
+                name="email"
+                type="email"
+                placeholder="Email"
+              />
+              <div class="favourite-platform">
+                <p>Qual sua plataforma preferida?</p>
+                <input type="radio" id="favourite-platform-1" name="platform" />
+                <label for="favourite-platform-1">PC</label>
+                <input type="radio" id="favourite-platform-2" name="platform" />
+                <label for="favourite-platform-2">Xbox</label>
+                <input type="radio" id="favourite-platform-3" name="platform" />
+                <label for="favourite-platform-3">Playstation</label>
+              </div>
+              <div class="allow-news-check">
+                <input type="checkbox" id="allow-news" name="allow-news" />
+                <label for="allow-news">Desejo receber novidades.</label>
+              </div>
+              <div class="btn-submit">
+                <input type="submit" value="Enviar" />
+              </div>
+              <div class="btn-reset">
+                <input type="reset" value="Limpar" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="footer-social">
+            <a href="#">@dsplaygames</a>
+            <a href="">/dsplaygames</a>
+          </div>
+          <p>DS Play Games Ltda. Todos direitos reservados</p>
+          <div>
+            <a href="#">Política de privacidade</a>
+            <a href="#">Termos de uso</a>
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
