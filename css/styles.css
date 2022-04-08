@@ -30,6 +30,12 @@ html {
   width: 100%;
 }
 
+a,
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -119,6 +125,7 @@ html {
   font-size: 10px;
   line-height: 15px;
   margin: 0;
+  padding-bottom: 8px;
 }
 
 .btn-read {
@@ -210,6 +217,10 @@ html {
   font-weight: 700;
 }
 
+#signup {
+  padding-bottom: 40px;
+}
+
 #signup .container {
   display: flex;
   flex-direction: column;
@@ -258,6 +269,7 @@ html {
   font-weight: 400;
   border-radius: 4px;
   border: 1px solid var(--text-dark-green);
+  font-family: 'Poppins', sans-serif;
 }
 
 .fav-radio-element {
@@ -323,4 +335,38 @@ html {
   border: 2px solid var(--bg-red);
 }
 
+footer {
+  background-color: var(--color-black);
+  height: 302px;
+  color: var(--color-white);
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+}
 
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 37px;
+  align-items: center;
+}
+
+.footer-rights {
+  margin: 0;
+  margin-bottom: 37px;
+  text-align: center;
+}
+
+.footer-terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
